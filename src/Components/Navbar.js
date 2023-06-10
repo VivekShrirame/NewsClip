@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             NewsClip
@@ -22,39 +22,39 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="navitem">
-                <Link className="nav-link active" to="/">
-                  General
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/">
+                  Home
                 </Link>
               </li>
-              <li className="navitem">
-                <Link className="nav-link active" to="/business">
+              <li className="nav-item">
+                <Link className="nav-link" to="/business">
                   Business
                 </Link>
               </li>
-              <li className="navitem">
-                <Link className="nav-link active" to="/entertainment">
+              <li className="nav-item">
+                <Link className="nav-link" to="/entertainment">
                   Entertainment
                 </Link>
               </li>
 
-              <li className="navitem">
-                <Link className="nav-link active" to="/health">
+              <li className="nav-item">
+                <Link className="nav-link" to="/health">
                   Health
                 </Link>
               </li>
-              <li className="navitem">
-                <Link className="nav-link active" to="/science">
+              <li className="nav-item">
+                <Link className="nav-link" to="/science">
                   Science
                 </Link>
               </li>
-              <li className="navitem">
-                <Link className="nav-link active" to="/sports">
+              <li className="nav-item">
+                <Link className="nav-link" to="/sports">
                   Sports
                 </Link>
               </li>
-              <li className="navitem">
-                <Link className="nav-link active" to="/technology">
+              <li className="nav-item">
+                <Link className="nav-link" to="/technology">
                   Technology
                 </Link>
               </li>
@@ -66,4 +66,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

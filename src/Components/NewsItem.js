@@ -13,20 +13,20 @@ const NewsItem = (props) => {
             right: "0",
           }}
         >
-          <span className=" badge rounded-pill bg-danger">{source}</span>
+          <span className="badge rounded-pill bg-danger"> {source} </span>
         </div>
         <img
           src={
             !imageUrl
-              ? "https://www.vskills.in/certification/blog/wp-content/uploads/2015/01/structure-of-a-news-report.jpg"
+              ? "https://fdn.gsmarena.com/imgroot/news/21/08/xiaomi-smart-home-india-annoucnements/-476x249w4/gsmarena_00.jpg"
               : imageUrl
           }
           className="card-img-top"
           alt="..."
         />
         <div className="card-body">
-          <h4 className="card-title">{title}</h4>
-          <p className="card-text">{description}...</p>
+          <h5 className="card-title">{title} </h5>
+          <p className="card-text">{description}</p>
           <p className="card-text">
             <small className="text-muted">
               By {!author ? "Unknown" : author} on{" "}
@@ -34,9 +34,9 @@ const NewsItem = (props) => {
             </small>
           </p>
           <a
+            rel="noreferrer"
             href={newsUrl}
             target="_blank"
-            rel="noreferrer"
             className="btn btn-sm btn-dark"
           >
             Read More
